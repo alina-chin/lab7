@@ -15,7 +15,7 @@ function initializePage() {
 
 function projectClick(e) {
 	e.preventDefault();
-	ga("send", "event", "like", "click");
+	// ga("send", "event", "like", "click"); DOESN'T WORK
 	gtag('event', 'click', {
   		'event_category': 'like'
 	});
