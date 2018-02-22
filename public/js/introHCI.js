@@ -10,4 +10,14 @@ $(document).ready(function() {
  */
 function initializePage() {
 	// your code here
+	$("button").click(projectClick);
+}
+
+function projectClick(e) {
+	e.preventDefault();
+	ga("send", "event", "like", "click");
+	gtag('event', 'click', {
+  		'event_category': 'like'
+	});
+	console.log("why is the ga not working wtf");
 }
